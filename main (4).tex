@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[bulgarian]{babel}% Required for inserting images
+
+\title{\huge Самостоятелна работа \\ GENB045 Математически анализ}
+\author{\LARGE Владимир Стоянов F108982 \\ \LARGE "Нов Български Университет"}
+\date{\LARGE 04.06.2024г.}
+
+\begin{document}
+
+\maketitle
+
+\Large
+\begin{center}
+    \section*{Задача 04}
+\end{center}
+\newpage
+\begin{center}
+    Ще изчислим неопределения интеграл:
+    \[ \int\,\frac{\sin(\ln(x))}{x}\,dx \]
+\end{center}
+
+\vspace{1.5cm}
+Полагаме $t = \ln(x)$ и получаваме:
+\[ \int\,\frac{\sin(\ln(x))}{x}\,dx = \int\,\sin(t)\,dt = \]
+
+\vspace{1cm}
+Ще използваме табличния интеграл:
+\[ \int \sin(x)\,dx = -\cos(x) + C \]
+
+\vspace{1cm}
+И така откриваме:
+\[ -\cos(t) = -\cos(\ln(x)) + C \]
+
+\vspace{2cm}
+
+\begin{center}
+    Отговор
+    \[ \int\,\frac{\sin(\ln(x))}{x}\,dx \,=\, -\cos(\ln(x)) + C \]
+\end{center}
+
+\end{document}

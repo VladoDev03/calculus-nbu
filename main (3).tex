@@ -1,0 +1,125 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[bulgarian]{babel}% Required for inserting images
+
+\title{\huge Самостоятелна работа \\ GENB045 Математически анализ}
+\author{\LARGE Владимир Стоянов F108982 \\ \LARGE "Нов Български Университет"}
+\date{\LARGE 04.06.2024г.}
+
+\begin{document}
+
+\maketitle
+
+\Large
+\begin{center}
+    \section*{Задача 03}
+\end{center}
+\newpage
+\begin{center}
+    Ще определим интервалите, в които функцията \[ y = x^\frac{2}{3}(x-2)^2 \] монотонно расте и монотонно намалява, както и точките, в които тя има локален минимум и локален максимум.
+\end{center}
+\vspace{0.5cm}
+(1.) $x^\frac{2}{3} $ и $ (x-2)^2 \in (-\infty, \infty) \Rightarrow y $ е дефиниран \linebreak за всяко $ x $
+\vspace{0.5cm} \\
+Опростяваме
+\[ y = x^\frac{2}{3}(x-2)^2 = \]
+
+\[ = x^\frac{2}{3}(x^2-4x+4) = x^{2\frac{2}{3}} - 4^{1\frac{2}{3}} + 4x^\frac{2}{3} \]
+
+\vspace{0.5cm}
+(2.) Намираме първата производна
+\[ y' = 2^\frac{2}{3}x^{1\frac{2}{3}} - \frac{20}{3}x^\frac{2}{3} + \frac{8}{3}x^{-\frac{1}{3}} \]
+
+\vspace{0.5cm}
+(3.) Намираме точките, в които функцията има \linebreak екстремуми
+\[ \frac{8}{3}\sqrt[3]{x^5} - \frac{20}{3}\sqrt[3]{x^2} + \frac{8}{3\sqrt[3]{x}} = 0 \]
+
+\vspace{0.5cm}
+Умножаваме по $ \frac{3}{4} $ и се получава:
+
+\[ 2\sqrt[3]{x^5} - 5\sqrt[3]{x^2} + \frac{2}{\sqrt[3]{x}} = 0 \]
+
+\newpage
+Полагаме $ \sqrt[3]{x} = u $ и се получава:
+\[ 2u^5 - 5u^2 + \frac{2}{u} = 0 \]
+
+\vspace{0.5cm}
+Умножаваме по $ u $ и се получава:
+\[ 2u^6 - 5u^3 + 2 = 0 \]
+
+\vspace{0.5cm}
+Полагаме $ u^3 = t $ и се получава:
+\[ 2t^2-5t+2 = 0 \]
+
+\vspace{0.5cm}
+Решаваме квадратното уравнение:
+\[ t_{1,2} = \frac{5 \pm \sqrt{25-16}}{4} = \frac{5 \pm 3}{4} \]
+
+\vspace{0.5cm}
+Намираме, че:
+\[ t_1 = \frac{5 - 3}{4} = \frac{1}{2} \qquad t_2 = \frac{5 + 3}{4} = 2 \]
+
+\vspace{0.5cm}
+\[ u_1 = \frac{1}{\sqrt[3]{2}} \qquad u_2 = \sqrt[3]{2} \]
+
+\vspace{0.5cm}
+Връщаме се към изходната променлива $x$ и от $ u = \sqrt[3]{x} $ следва $ u^3 = x $
+\[ x_1 = \frac{1}{2} \qquad x_2 = 2 \]
+
+\newpage
+
+\vspace{0.5cm}
+(4.) Намираме втората производна
+\[ y' = \frac{4}{3} \left({2x^\frac{5}{3}} - {5x^\frac{2}{3}} + {2x^{-\frac{1}{3}}}\right) \]
+
+\[ y'' = \frac{4}{3} \left({\frac{10}{3}x^\frac{2}{3}} - {\frac{10}{3}x^{-\frac{1}{3}}} - {\frac{2}{3}x^{-\frac{4}{3}}}\right) \]
+
+\vspace{0.5cm}
+(5.) Използвайки точките, в които открихме \linebreak екстремуми, заместваме $x$ във втората производна, за да намерим локалните минимум и максимум
+\vspace{0.5cm}
+
+\[
+    y''\left(\frac{1}{2}\right) = \frac{4}{3} \cdot \left[ \frac{10}{3} \cdot \left(\frac{1}{2}\right)^{\frac{2}{3}} - \frac{10}{2} \cdot \left(\frac{1}{2}\right)^{-\frac{1}{3}} - \frac{2}{3} \cdot \left(\frac{1}{2}\right)^{-\frac{4}{3}} \right] < 0
+\]
+
+\vspace{0.25cm}
+
+\begin{center}
+    и
+\end{center}
+
+\vspace{0.25cm}
+\[
+    y''(2) = \frac{4}{3} \cdot \left( \frac{10}{3} \cdot 2^{\frac{2}{3}} - \frac{10}{3} \cdot 2^{-\frac{1}{3}} - \frac{2}{3} \cdot 2^{-\frac{4}{3}} \right) =
+\]
+
+
+\[
+    = \frac{4}{3} \cdot \left( \frac{10}{3} \cdot \sqrt[3]{4} - \frac{10}{3 \sqrt[3]{2}} - \frac{2}{3 \sqrt[3]{2^4}} \right) > 0
+\]
+
+\vspace{1cm}
+Следователно при $ x = \frac{1}{2} $ функцията има локален максимум, а при $ x = 2 $ - локален минимум.
+\newpage
+\begin{center}
+    Отговор
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+    При $x \in (-\infty, \frac{1}{2})$ монотонно расте \\
+    \vspace{1cm}
+    При $x \in (\frac{1}{2}, 2)$ монотонно намалява \\
+    \vspace{1cm}
+    При $x \in (2, \infty)$ монотонно расте \\
+    \vspace{1cm}
+    При $x = \frac{1}{2}$ локален максимум \\
+    \vspace{1cm}
+    При $x = 2$ локален минимум \\
+    \vspace{1cm}
+    \vspace{2cm}
+    \includegraphics[scale=1]{graphic.png}
+\end{center}
+
+\end{document}

@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[bulgarian]{babel}% Required for inserting images
+
+\title{\huge Самостоятелна работа \\ GENB045 Математически анализ}
+\author{\LARGE Владимир Стоянов F108982 \\ \LARGE "Нов Български Университет"}
+\date{\LARGE 04.06.2024г.}
+
+\begin{document}
+
+\maketitle
+
+\Large
+\begin{center}
+    \section*{Задача 02}
+\end{center}
+\newpage
+\begin{center}
+    Ще изчислим границата на функцията
+\end{center}
+\[ \lim_{x\to\infty} x^{\frac{3}{2}}\left(\sqrt{x^3+2}-\sqrt{x^3-2}\right) \]
+
+\vspace{0.5cm}
+\begin{center}
+    Решение
+\end{center}
+\[ \lim_{x\to\infty} x^{\frac{3}{2}}\left(\sqrt{x^3+2}-\sqrt{x^3-2}\right)= \]
+
+\[ =\frac{\left(\sqrt{x^3+2}-\sqrt{x^3-2}\right)\left(\sqrt{x^3+2}+\sqrt{x^3-2}\right)}
+{\left(\sqrt{x^3+2}+\sqrt{x^3-2}\right)}= \]
+
+\[ \frac{x^3 + 2 - (x^3 - 2)}{\sqrt{x^3+2}+\sqrt{x^3-2}}\cdot\sqrt[3]{x^2}= \frac{x^2 + 2 - x^2 + 2}{\sqrt{x^3+2}+\sqrt{x^3-2}}\cdot\sqrt[3]{x^2}= \]
+
+\[ =\frac{4x^\frac{2}{3}}{2\sqrt{x^3}} = \frac{4x^\frac{2}{3}}{2x^\frac{3}{2}} = \lim_{x\to\infty} 2x^{-\frac{5}{6}} = \lim_{x\to\infty} \frac{2}{x^\frac{5}{6}} = \lim_{x\to\infty} \frac{2}{\sqrt[6]{x^5}} \]
+
+\vspace{1.5cm}
+\begin{center}
+    Отговор
+\end{center}
+\[ \lim_{x\to\infty} \frac{2}{\sqrt[6]{x^5}} = 0 \]
+
+\end{document}

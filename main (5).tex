@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[bulgarian]{babel}% Required for inserting images
+
+\title{\huge Самостоятелна работа \\ GENB045 Математически анализ}
+\author{\LARGE Владимир Стоянов F108982 \\ \LARGE "Нов Български Университет"}
+\date{\LARGE 04.06.2024г.}
+
+\begin{document}
+
+\maketitle
+
+\Large
+\begin{center}
+    \section*{Задача 05}
+\end{center}
+\newpage
+\begin{center}
+    Ще изчислим лицето на фигура, чиято граница е зададена параметрично с: \\
+    \vspace{0.5cm}
+    $ x = 2t - t^2 $ \qquad
+    $ y = 2t^2 - t^3 $ \qquad
+    $ t \in (0, 2) $ \\
+\end{center}
+
+\vspace{1cm}
+Ще използваме, че:
+\[ S(F) = \int_a^b f(t) \cdot g'(t) \cdot dt \]
+
+\vspace{1cm}
+Където:
+\[ f(t) = 2t-t^2 \quad g(t) = 2t^2-t^3 \quad g'(t) = 4t-3t^3 \]
+
+\vspace{1cm}
+И ще получим:
+\[ S(F) = \int_0^2 (2t-t^2) \cdot (4t-3t^3) \cdot dt \]
+
+\vspace{0.5cm}
+Решаваме интеграла:
+\[ \int_0^2 (2t-t^2) \cdot (4t-3t^3) \cdot dt = \]
+
+\[ = \int_0^2 (8t^2 - 6t^4 - 4t^3 + 3t^5) \cdot dt = \]
+
+\[ = {\int_0^2 8t^2\,dt} - {\int_0^2 6t^4\,dt} - {\int_0^2 4t^3\,dt} + {\int_0^2 3t^5\,dt} = \]
+
+\[ = {8\int_0^2 t^2\,dt} - {6\int_0^2 t^4\,dt} - {4\int_0^2 t^3\,dt} + {3\int_0^2 t^5\,dt} \]
+\newpage
+\begin{flushleft}
+    Решаваме четирите интеграла, като ще използваме табличния интеграл:
+\end{flushleft}
+\[ \int_a^b x^s\,dx = \frac{1}{1 + s}(b^{1+s} - a^{1 + s}),\, s \neq -1 \]
+
+\[ 8\int_0^2 t^2\,dt = \frac{64}{3} \]
+
+\[ -6\int_0^2 t^4\,dt = -\frac{192}{5} \]
+
+\[ -4\int_0^2 t^3\,dt = -16 \]
+
+\[ 3\int_0^2 t^5\,dt = 32 \]
+
+\vspace{1cm}
+Последни сметки
+\[ S(F) = \frac{64}{3} - \frac{192}{5} - 16 + 32 = -\frac{16}{15} \]
+
+\vspace{1.5cm}
+\begin{center}
+    Отговор
+    \vspace{0.5cm}
+    \[ S(F) = -\frac{16}{15} \]
+\end{center}
+
+\end{document}
